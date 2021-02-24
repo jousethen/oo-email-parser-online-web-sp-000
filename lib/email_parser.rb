@@ -6,7 +6,7 @@ class EmailAddressParser
   @email_addresses = []
   
   def initialize (email_addresses)
-    @email_addresses = email_addresses.split ("[, ]+")
+    @email_addresses = email_addresses.split ("/[, \s]/")
   end
   
   def parse
